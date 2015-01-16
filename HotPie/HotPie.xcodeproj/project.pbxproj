@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DE509C51A68C5DD00B89305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C41A68C5DD00B89305 /* main.m */; };
+		4DE509C81A68C5DD00B89305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C71A68C5DD00B89305 /* AppDelegate.m */; };
+		4DE509CB1A68C5DD00B89305 /* HotPie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C91A68C5DD00B89305 /* HotPie.xcdatamodeld */; };
+		4DE509CE1A68C5DD00B89305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509CD1A68C5DD00B89305 /* ViewController.m */; };
+		4DE509D11A68C5DD00B89305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE509CF1A68C5DD00B89305 /* Main.storyboard */; };
+		4DE509D31A68C5DD00B89305 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE509D21A68C5DD00B89305 /* Images.xcassets */; };
+		4DE509D61A68C5DD00B89305 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE509D41A68C5DD00B89305 /* LaunchScreen.xib */; };
+		4DE509E21A68C5DD00B89305 /* HotPieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509E11A68C5DD00B89305 /* HotPieTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DE509DC1A68C5DD00B89305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE509B71A68C5DD00B89305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE509BE1A68C5DD00B89305;
+			remoteInfo = HotPie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4DE509BF1A68C5DD00B89305 /* HotPie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotPie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE509C31A68C5DD00B89305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE509C41A68C5DD00B89305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DE509C61A68C5DD00B89305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DE509C71A68C5DD00B89305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4DE509CA1A68C5DD00B89305 /* HotPie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HotPie.xcdatamodel; sourceTree = "<group>"; };
+		4DE509CC1A68C5DD00B89305 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4DE509CD1A68C5DD00B89305 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4DE509D01A68C5DD00B89305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DE509D21A68C5DD00B89305 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4DE509D51A68C5DD00B89305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4DE509DB1A68C5DD00B89305 /* HotPieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotPieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE509E01A68C5DD00B89305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE509E11A68C5DD00B89305 /* HotPieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotPieTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DE509BC1A68C5DD00B89305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE509D81A68C5DD00B89305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DE509B61A68C5DD00B89305 = {
+			isa = PBXGroup;
+			children = (
+				4DE509C11A68C5DD00B89305 /* HotPie */,
+				4DE509DE1A68C5DD00B89305 /* HotPieTests */,
+				4DE509C01A68C5DD00B89305 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DE509C01A68C5DD00B89305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DE509BF1A68C5DD00B89305 /* HotPie.app */,
+				4DE509DB1A68C5DD00B89305 /* HotPieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DE509C11A68C5DD00B89305 /* HotPie */ = {
+			isa = PBXGroup;
+			children = (
+				4DE509C61A68C5DD00B89305 /* AppDelegate.h */,
+				4DE509C71A68C5DD00B89305 /* AppDelegate.m */,
+				4DE509CC1A68C5DD00B89305 /* ViewController.h */,
+				4DE509CD1A68C5DD00B89305 /* ViewController.m */,
+				4DE509CF1A68C5DD00B89305 /* Main.storyboard */,
+				4DE509D21A68C5DD00B89305 /* Images.xcassets */,
+				4DE509D41A68C5DD00B89305 /* LaunchScreen.xib */,
+				4DE509C91A68C5DD00B89305 /* HotPie.xcdatamodeld */,
+				4DE509C21A68C5DD00B89305 /* Supporting Files */,
+			);
+			path = HotPie;
+			sourceTree = "<group>";
+		};
+		4DE509C21A68C5DD00B89305 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DE509C31A68C5DD00B89305 /* Info.plist */,
+				4DE509C41A68C5DD00B89305 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DE509DE1A68C5DD00B89305 /* HotPieTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE509E11A68C5DD00B89305 /* HotPieTests.m */,
+				4DE509DF1A68C5DD00B89305 /* Supporting Files */,
+			);
+			path = HotPieTests;
+			sourceTree = "<group>";
+		};
+		4DE509DF1A68C5DD00B89305 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DE509E01A68C5DD00B89305 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DE509BE1A68C5DD00B89305 /* HotPie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE509E51A68C5DD00B89305 /* Build configuration list for PBXNativeTarget "HotPie" */;
+			buildPhases = (
+				4DE509BB1A68C5DD00B89305 /* Sources */,
+				4DE509BC1A68C5DD00B89305 /* Frameworks */,
+				4DE509BD1A68C5DD00B89305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotPie;
+			productName = HotPie;
+			productReference = 4DE509BF1A68C5DD00B89305 /* HotPie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DE509DA1A68C5DD00B89305 /* HotPieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE509E81A68C5DD00B89305 /* Build configuration list for PBXNativeTarget "HotPieTests" */;
+			buildPhases = (
+				4DE509D71A68C5DD00B89305 /* Sources */,
+				4DE509D81A68C5DD00B89305 /* Frameworks */,
+				4DE509D91A68C5DD00B89305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE509DD1A68C5DD00B89305 /* PBXTargetDependency */,
+			);
+			name = HotPieTests;
+			productName = HotPieTests;
+			productReference = 4DE509DB1A68C5DD00B89305 /* HotPieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DE509B71A68C5DD00B89305 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Michael Daniels";
+				TargetAttributes = {
+					4DE509BE1A68C5DD00B89305 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4DE509DA1A68C5DD00B89305 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 4DE509BE1A68C5DD00B89305;
+					};
+				};
+			};
+			buildConfigurationList = 4DE509BA1A68C5DD00B89305 /* Build configuration list for PBXProject "HotPie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DE509B61A68C5DD00B89305;
+			productRefGroup = 4DE509C01A68C5DD00B89305 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DE509BE1A68C5DD00B89305 /* HotPie */,
+				4DE509DA1A68C5DD00B89305 /* HotPieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DE509BD1A68C5DD00B89305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE509D11A68C5DD00B89305 /* Main.storyboard in Resources */,
+				4DE509D61A68C5DD00B89305 /* LaunchScreen.xib in Resources */,
+				4DE509D31A68C5DD00B89305 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE509D91A68C5DD00B89305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DE509BB1A68C5DD00B89305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE509C81A68C5DD00B89305 /* AppDelegate.m in Sources */,
+				4DE509C51A68C5DD00B89305 /* main.m in Sources */,
+				4DE509CE1A68C5DD00B89305 /* ViewController.m in Sources */,
+				4DE509CB1A68C5DD00B89305 /* HotPie.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE509D71A68C5DD00B89305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE509E21A68C5DD00B89305 /* HotPieTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DE509DD1A68C5DD00B89305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE509BE1A68C5DD00B89305 /* HotPie */;
+			targetProxy = 4DE509DC1A68C5DD00B89305 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DE509CF1A68C5DD00B89305 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE509D01A68C5DD00B89305 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DE509D41A68C5DD00B89305 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DE509D51A68C5DD00B89305 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DE509E31A68C5DD00B89305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DE509E41A68C5DD00B89305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DE509E61A68C5DD00B89305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HotPie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4DE509E71A68C5DD00B89305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HotPie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4DE509E91A68C5DD00B89305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HotPieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotPie.app/HotPie";
+			};
+			name = Debug;
+		};
+		4DE509EA1A68C5DD00B89305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HotPieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotPie.app/HotPie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DE509BA1A68C5DD00B89305 /* Build configuration list for PBXProject "HotPie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE509E31A68C5DD00B89305 /* Debug */,
+				4DE509E41A68C5DD00B89305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE509E51A68C5DD00B89305 /* Build configuration list for PBXNativeTarget "HotPie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE509E61A68C5DD00B89305 /* Debug */,
+				4DE509E71A68C5DD00B89305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4DE509E81A68C5DD00B89305 /* Build configuration list for PBXNativeTarget "HotPieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE509E91A68C5DD00B89305 /* Debug */,
+				4DE509EA1A68C5DD00B89305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4DE509C91A68C5DD00B89305 /* HotPie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4DE509CA1A68C5DD00B89305 /* HotPie.xcdatamodel */,
+			);
+			currentVersion = 4DE509CA1A68C5DD00B89305 /* HotPie.xcdatamodel */;
+			path = HotPie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4DE509B71A68C5DD00B89305 /* Project object */;
+}
