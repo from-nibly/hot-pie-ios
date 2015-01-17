@@ -42,6 +42,9 @@
 - (void)pan:(UIPanGestureRecognizer *)recognizer {
     self.inUse = (recognizer.state != UIGestureRecognizerStateEnded);
     CGPoint point = [recognizer velocityInView:self.label];
+    if((self.directionCount > 0 && point.x < 0) || (self.directionCount < 0 && point.x > 0)) { // If the drag changes directions reset the directionCount
+        self.directionCount = 0;
+    }
     CGFloat multiplier = fabsf(point.x) < 100 ? 0.5 : 1 + abs(point.x / 150);
     point.x = (point.x > 0 ? self.changeSpeed : -self.changeSpeed) * multiplier;
     self.directionCount += point.x;
