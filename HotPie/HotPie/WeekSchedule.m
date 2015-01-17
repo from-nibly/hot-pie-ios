@@ -41,9 +41,13 @@
 + (void)getCurrentScheduleNameOnCompletion:(void (^)(NSString *name, NSError *error))success {
     [[APIClient sharedClient] GET:@"/schedule" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Schedule: %@", responseObject);
-        success(@"", nil);
+        if(success) {
+            success(@"", nil);
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        success(nil, error);
+        if(success) {
+            success(nil, error);
+        }
     }];
 }
 
@@ -51,9 +55,26 @@
     [[APIClient sharedClient] GET:[NSString stringWithFormat:@"/schedules/%@", name] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Schedules: %@", responseObject);
         WeekSchedule *weekSchedule = [[WeekSchedule alloc] initWithDictionary:responseObject];
-        success(weekSchedule, nil); // Updated when the call is updated
+        if(success) {
+            success(weekSchedule, nil); // Updated when the call is updated
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        success(nil, error);
+        if(success) {
+            success(nil, error);
+        }
+    }];
+}
+
++ (void)switchToScheduleWithName:(NSString *)name completion:(void (^)(NSError *error))success {
+    [[APIClient sharedClient] POST:[NSString stringWithFormat:@"/mode/%@", name] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Post Vacation Response: %@", responseObject);
+        if(success) {
+            success(nil);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        if(success) {
+            success(error);
+        }
     }];
 }
 

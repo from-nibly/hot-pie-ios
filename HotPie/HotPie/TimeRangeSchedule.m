@@ -12,7 +12,6 @@
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict {
     if(self = [super init]) {
-        self.label = dict[@"label"];
         self.temp = [dict[@"temp"] integerValue];
         NSArray *startTime = [dict[@"start"] componentsSeparatedByString:@":"];
         self.startHour = [startTime[0] integerValue];

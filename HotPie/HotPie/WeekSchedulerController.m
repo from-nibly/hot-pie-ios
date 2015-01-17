@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSArray *days;
+@property (nonatomic) NSInteger currentPage;
+@property (nonatomic) BOOL scrolling;
 
 @end
 
@@ -54,6 +56,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SchedulerCell *cell = (SchedulerCell *)[collectionView dequeueReusableCellWithReuseIdentifier:SchedulerCellIdentifier forIndexPath:indexPath];
     cell.dayLabel.text = self.days[indexPath.row];
+    [cell.tableView reloadData];
     cell.delegate = self;
     cell.itemCount = 24;
     return cell;
@@ -69,23 +72,24 @@
     return CGSizeMake(self.collectionView.frame.size.width, collectionView.frame.size.height);
 }
 
+// The tableview is on the SchedulerCell. Part of the tableview methods are being passed to this class from the SchedulerCell through delegate methods.
 #pragma mark - SchedulerCell Delegate
 
 -(UITableViewCell *)schedulerCell:(SchedulerCell *)schedulerCell tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ScheduleTimeCell *cell = [tableView dequeueReusableCellWithIdentifier:SchedulerTimeCellIdentifier];
-    if(indexPath.row >= self.days.count) {
-        NSLog(@"Uh oh...");
-        return cell;
-    }
-    NSString *day = self.days[indexPath.row];
+    NSInteger dayIndex = self.currentPage;//self.days.count - (self.collectionView.contentSize.width / (cell.frame.origin.x + cell.frame.size.width));
+    NSString *dayString = self.days[dayIndex];
     NSString *period = indexPath.row < 11 || indexPath.row == 24 ? @"AM" : @"PM";
     NSInteger hour = indexPath.row % 12 + 1;
     NSString *hourString = [NSString stringWithFormat:@"%@", @(hour)];
     cell.timeLabel.text = [NSString stringWithFormat:@"%@:00 %@", hourString, period];
-    DaySchedule *daySchedule = [self.weekSchedule scheduleForDay:day];
-    TimeRangeSchedule *timeRange = [daySchedule timeRangeScheduleForHour:indexPath.row]; // Use indexPath.row because the ranges are based of 1-24 instead of 1-12
-    cell.temperatureLabel.text = [Temperature formattedTextWithTemperature:timeRange.temp];
-    cell.backgroundColor = timeRange ? timeRange.color : [UIColor whiteColor];
+    DaySchedule *daySchedule = [self.weekSchedule scheduleForDay:dayString];
+    
+    if(!self.scrolling) {
+        TimeRangeSchedule *timeRange = [daySchedule timeRangeScheduleForHour:indexPath.row + 1]; // Use indexPath.row because the ranges are based of 1-24 instead of 1-12
+        cell.temperatureLabel.text = [Temperature formattedTextWithTemperature:timeRange.temp];
+        cell.backgroundColor = timeRange ? timeRange.color : [UIColor whiteColor];
+    }
     return cell;
     
 }
@@ -94,13 +98,25 @@
     NSIndexPath *currentIndexPath = [tableView indexPathForSelectedRow];
     if(currentIndexPath) {
         // Selected start and end indexPaths
-        NSLog(@"Selected start and end indexpath");
         PopupController *tempatureSettingsController = [TempatureSettingsController popupController]; // TODO: setup delegate so we can send the info to the server
         [tempatureSettingsController show];
         [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:NO];
         return nil;
     }
     return indexPath;
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    self.scrolling = YES;
+    self.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    self.scrolling = NO;
+    self.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+    [self.collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.currentPage inSection:0]]];
 }
 
 @end

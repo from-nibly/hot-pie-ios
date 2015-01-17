@@ -23,5 +23,6 @@ extern NSString *const SchedulerCellIdentifier;
 @property (nonatomic, weak) id <SchedulerCellDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
 @property (nonatomic) NSInteger itemCount;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

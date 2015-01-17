@@ -13,8 +13,6 @@ NSString *const SchedulerCellIdentifier = @"SchedulerCell";
 
 @interface SchedulerCell() <UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 @end
 
 @implementation SchedulerCell
@@ -26,9 +24,10 @@ NSString *const SchedulerCellIdentifier = @"SchedulerCell";
 - (void)prepareForReuse {
     self.tableView.contentOffset = CGPointZero;
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:NO];
+    [self.tableView reloadData];
 }
 
-#pragma mark - Table view data source
+#pragma mark - TableView DataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -45,6 +44,8 @@ NSString *const SchedulerCellIdentifier = @"SchedulerCell";
     }
     return nil;
 }
+
+#pragma mark - TableView Delegate
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if(self.delegate && [self.delegate respondsToSelector:@selector(schedulerCell:tableView:willSelectRowAtIndexPath:)]) {

@@ -23,6 +23,7 @@
 		4D4E36611A69E30900164439 /* DaySchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36601A69E30900164439 /* DaySchedule.m */; };
 		4D4E36641A69F18400164439 /* WeekSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36631A69F18400164439 /* WeekSchedule.m */; };
 		4D4E36671A69F46400164439 /* TimeRangeSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36661A69F46400164439 /* TimeRangeSchedule.m */; };
+		4D4E366B1A6AD0D900164439 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E366A1A6AD0D900164439 /* MenuController.m */; };
 		4DE509C51A68C5DD00B89305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C41A68C5DD00B89305 /* main.m */; };
 		4DE509C81A68C5DD00B89305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C71A68C5DD00B89305 /* AppDelegate.m */; };
 		4DE509CB1A68C5DD00B89305 /* HotPie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C91A68C5DD00B89305 /* HotPie.xcdatamodeld */; };
@@ -75,6 +76,9 @@
 		4D4E36631A69F18400164439 /* WeekSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekSchedule.m; sourceTree = "<group>"; };
 		4D4E36651A69F46400164439 /* TimeRangeSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeRangeSchedule.h; sourceTree = "<group>"; };
 		4D4E36661A69F46400164439 /* TimeRangeSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeRangeSchedule.m; sourceTree = "<group>"; };
+		4D4E36681A6ACE5800164439 /* HotPie.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotPie.pch; sourceTree = "<group>"; };
+		4D4E36691A6AD0D900164439 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		4D4E366A1A6AD0D900164439 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		4DE509BF1A68C5DD00B89305 /* HotPie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotPie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE509C31A68C5DD00B89305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DE509C41A68C5DD00B89305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				4DE509CD1A68C5DD00B89305 /* WeekSchedulerController.m */,
 				4D4E35FD1A697FB700164439 /* HomeController.h */,
 				4D4E35FE1A697FB700164439 /* HomeController.m */,
+				4D4E36691A6AD0D900164439 /* MenuController.h */,
+				4D4E366A1A6AD0D900164439 /* MenuController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 		4DE509C21A68C5DD00B89305 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D4E36681A6ACE5800164439 /* HotPie.pch */,
 				4DE509C31A68C5DD00B89305 /* Info.plist */,
 				4DE509C41A68C5DD00B89305 /* main.m */,
 			);
@@ -424,6 +431,7 @@
 			files = (
 				4D4E36611A69E30900164439 /* DaySchedule.m in Sources */,
 				4D4E36671A69F46400164439 /* TimeRangeSchedule.m in Sources */,
+				4D4E366B1A6AD0D900164439 /* MenuController.m in Sources */,
 				4D4E365A1A69CB9000164439 /* Temperature.m in Sources */,
 				4D4E36641A69F18400164439 /* WeekSchedule.m in Sources */,
 				4D4E365E1A69CC8B00164439 /* APIClient.m in Sources */,
@@ -564,6 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = HotPie/HotPie.pch;
 				INFOPLIST_FILE = HotPie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -577,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = HotPie/HotPie.pch;
 				INFOPLIST_FILE = HotPie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

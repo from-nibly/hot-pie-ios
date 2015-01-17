@@ -13,6 +13,7 @@
 
 @property (nonatomic) CGFloat changeSpeed;
 @property (nonatomic) CGFloat directionCount;
+@property (nonatomic, readwrite) BOOL inUse;
 @property (nonatomic, weak) UILabel *label;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
 
@@ -39,6 +40,7 @@
 }
 
 - (void)pan:(UIPanGestureRecognizer *)recognizer {
+    self.inUse = (recognizer.state != UIGestureRecognizerStateEnded);
     CGPoint point = [recognizer velocityInView:self.label];
     CGFloat multiplier = fabsf(point.x) < 100 ? 0.5 : 1 + abs(point.x / 150);
     point.x = (point.x > 0 ? self.changeSpeed : -self.changeSpeed) * multiplier;

@@ -13,28 +13,40 @@
 
 + (void)getTemperatureOnCompletion:(void (^)(CGFloat temperature, NSError *error))success {
     [[APIClient sharedClient] GET:@"/temp/current" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Response: %@", responseObject);
-        success([responseObject[@"newValue"] floatValue], nil);
+        NSLog(@"Get Current Response: %@", responseObject);
+        if(success) {
+            success([responseObject[@"newValue"] floatValue], nil);
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        success(0, error);
+        if(success) {
+            success(0, error);
+        }
     }];
 }
 
 + (void)getOverrideOnCompletion:(void (^)(CGFloat temperature, NSError *error))success {
     [[APIClient sharedClient] GET:@"/temp/override" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Response: %@", responseObject);
-        success([responseObject[@"newValue"] floatValue], nil);
+        NSLog(@"Get Override Response: %@", responseObject);
+        if(success) {
+            success([responseObject[@"newValue"] floatValue], nil);
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        success(0, error);
+        if(success) {
+            success(0, error);
+        }
     }];
 }
 
 + (void)postNewValue:(CGFloat)value completion:(void (^)(NSError *error))success {
     [[APIClient sharedClient] POST:[NSString stringWithFormat:@"/temp/override/%@", @(value)] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Response: %@", responseObject);
-        success(nil);
+        NSLog(@"Post Override Response: %@", responseObject);
+        if(success) {
+            success(nil);
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        success(error);
+        if(success) {
+            success(error);
+        }
     }];
 }
 
