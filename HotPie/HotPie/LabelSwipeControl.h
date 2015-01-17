@@ -22,5 +22,6 @@
 @property (nonatomic, weak) id <LabelSwipeControlDelegate> delegate;
 @property (nonatomic) CGFloat value;
 @property (nonatomic) BOOL swipeEnabled;
+@property (nonatomic, readonly) BOOL inUse;
 
 @end

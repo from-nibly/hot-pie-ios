@@ -13,6 +13,7 @@
 
 + (void)getCurrentScheduleNameOnCompletion:(void (^)(NSString *name, NSError *error))success;
 + (void)getWeekScheduleWithName:(NSString *)name completion:(void (^)(WeekSchedule *weekSchedule, NSError *error))success;
++ (void)switchToScheduleWithName:(NSString *)name completion:(void (^)(NSError *error))success;
 - (DaySchedule *)scheduleForDay:(NSString *)day;
 
 @end

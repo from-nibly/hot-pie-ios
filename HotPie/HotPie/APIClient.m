@@ -15,7 +15,7 @@
     static APIClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[APIClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://137.190.207.214:3000"]];
+        _sharedClient = [[APIClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://137.190.206.76:3000"]];
         [_sharedClient setRequestSerializer:[AFJSONRequestSerializer serializer]];
     });
     return _sharedClient;
