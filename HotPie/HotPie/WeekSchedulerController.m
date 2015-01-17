@@ -55,7 +55,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SchedulerCell *cell = (SchedulerCell *)[collectionView dequeueReusableCellWithReuseIdentifier:SchedulerCellIdentifier forIndexPath:indexPath];
-    cell.dayLabel.text = self.days[indexPath.row];
+    cell.dayLabel.text = [self.days[indexPath.row] capitalizedString];
     [cell.tableView reloadData];
     cell.delegate = self;
     cell.itemCount = 24;
@@ -87,7 +87,7 @@
     
     if(!self.scrolling) {
         TimeRangeSchedule *timeRange = [daySchedule timeRangeScheduleForHour:indexPath.row + 1]; // Use indexPath.row because the ranges are based of 1-24 instead of 1-12
-        cell.temperatureLabel.text = [Temperature formattedTextWithTemperature:timeRange.temp];
+        cell.temperatureLabel.text = [Temperature formattedTextWithTemperature:timeRange ? timeRange.temp : daySchedule.defaultValue];
         cell.backgroundColor = timeRange ? timeRange.color : [UIColor whiteColor];
     }
     return cell;
