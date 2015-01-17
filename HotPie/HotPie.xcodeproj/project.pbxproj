@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D4E35FF1A697FB700164439 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E35FE1A697FB700164439 /* HomeController.m */; };
+		4D4E36021A6980AC00164439 /* UIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36011A6980AC00164439 /* UIViewController+Additions.m */; };
+		4D4E363F1A698B1700164439 /* ScheduleTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E363D1A698B1700164439 /* ScheduleTimeCell.m */; };
+		4D4E36401A698B1700164439 /* ScheduleTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4E363E1A698B1700164439 /* ScheduleTimeCell.xib */; };
+		4D4E36441A698BFD00164439 /* SchedulerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36421A698BFD00164439 /* SchedulerCell.m */; };
+		4D4E36451A698BFD00164439 /* SchedulerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4E36431A698BFD00164439 /* SchedulerCell.xib */; };
+		4D4E36491A6996A100164439 /* TempatureSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36481A6996A100164439 /* TempatureSettingsController.m */; };
+		4D4E364B1A69974D00164439 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4E364A1A69974D00164439 /* Popup.storyboard */; };
+		4D4E364E1A69979400164439 /* PopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E364D1A69979400164439 /* PopupController.m */; };
+		4D4E36521A699D2800164439 /* TouchWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36511A699D2800164439 /* TouchWindow.m */; };
+		4D4E36551A69C16D00164439 /* LabelSwipeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36541A69C16D00164439 /* LabelSwipeControl.m */; };
+		4D4E365A1A69CB9000164439 /* Temperature.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36591A69CB9000164439 /* Temperature.m */; };
+		4D4E365E1A69CC8B00164439 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E365D1A69CC8B00164439 /* APIClient.m */; };
+		4D4E36611A69E30900164439 /* DaySchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36601A69E30900164439 /* DaySchedule.m */; };
+		4D4E36641A69F18400164439 /* WeekSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36631A69F18400164439 /* WeekSchedule.m */; };
+		4D4E36671A69F46400164439 /* TimeRangeSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4E36661A69F46400164439 /* TimeRangeSchedule.m */; };
 		4DE509C51A68C5DD00B89305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C41A68C5DD00B89305 /* main.m */; };
 		4DE509C81A68C5DD00B89305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C71A68C5DD00B89305 /* AppDelegate.m */; };
 		4DE509CB1A68C5DD00B89305 /* HotPie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509C91A68C5DD00B89305 /* HotPie.xcdatamodeld */; };
-		4DE509CE1A68C5DD00B89305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509CD1A68C5DD00B89305 /* ViewController.m */; };
+		4DE509CE1A68C5DD00B89305 /* WeekSchedulerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509CD1A68C5DD00B89305 /* WeekSchedulerController.m */; };
 		4DE509D11A68C5DD00B89305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE509CF1A68C5DD00B89305 /* Main.storyboard */; };
 		4DE509D31A68C5DD00B89305 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE509D21A68C5DD00B89305 /* Images.xcassets */; };
 		4DE509D61A68C5DD00B89305 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE509D41A68C5DD00B89305 /* LaunchScreen.xib */; };
 		4DE509E21A68C5DD00B89305 /* HotPieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE509E11A68C5DD00B89305 /* HotPieTests.m */; };
+		5C974B63E643AB47695316C0 /* libPods-HotPie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FF5FDF2445EC87F6FD2AC3 /* libPods-HotPie.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +45,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3193BAFB87761606075660DF /* Pods-HotPie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotPie.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotPie/Pods-HotPie.release.xcconfig"; sourceTree = "<group>"; };
+		4D4E35FD1A697FB700164439 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		4D4E35FE1A697FB700164439 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		4D4E36001A6980AC00164439 /* UIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Additions.h"; sourceTree = "<group>"; };
+		4D4E36011A6980AC00164439 /* UIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Additions.m"; sourceTree = "<group>"; };
+		4D4E363C1A698B1700164439 /* ScheduleTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTimeCell.h; sourceTree = "<group>"; };
+		4D4E363D1A698B1700164439 /* ScheduleTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTimeCell.m; sourceTree = "<group>"; };
+		4D4E363E1A698B1700164439 /* ScheduleTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTimeCell.xib; sourceTree = "<group>"; };
+		4D4E36411A698BFD00164439 /* SchedulerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedulerCell.h; sourceTree = "<group>"; };
+		4D4E36421A698BFD00164439 /* SchedulerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedulerCell.m; sourceTree = "<group>"; };
+		4D4E36431A698BFD00164439 /* SchedulerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchedulerCell.xib; sourceTree = "<group>"; };
+		4D4E36471A6996A100164439 /* TempatureSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempatureSettingsController.h; sourceTree = "<group>"; };
+		4D4E36481A6996A100164439 /* TempatureSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempatureSettingsController.m; sourceTree = "<group>"; };
+		4D4E364A1A69974D00164439 /* Popup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		4D4E364C1A69979400164439 /* PopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupController.h; sourceTree = "<group>"; };
+		4D4E364D1A69979400164439 /* PopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupController.m; sourceTree = "<group>"; };
+		4D4E36501A699D2800164439 /* TouchWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchWindow.h; sourceTree = "<group>"; };
+		4D4E36511A699D2800164439 /* TouchWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchWindow.m; sourceTree = "<group>"; };
+		4D4E36531A69C16D00164439 /* LabelSwipeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelSwipeControl.h; sourceTree = "<group>"; };
+		4D4E36541A69C16D00164439 /* LabelSwipeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelSwipeControl.m; sourceTree = "<group>"; };
+		4D4E36581A69CB9000164439 /* Temperature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Temperature.h; sourceTree = "<group>"; };
+		4D4E36591A69CB9000164439 /* Temperature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Temperature.m; sourceTree = "<group>"; };
+		4D4E365C1A69CC8B00164439 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		4D4E365D1A69CC8B00164439 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		4D4E365F1A69E30900164439 /* DaySchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaySchedule.h; sourceTree = "<group>"; };
+		4D4E36601A69E30900164439 /* DaySchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaySchedule.m; sourceTree = "<group>"; };
+		4D4E36621A69F18400164439 /* WeekSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekSchedule.h; sourceTree = "<group>"; };
+		4D4E36631A69F18400164439 /* WeekSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekSchedule.m; sourceTree = "<group>"; };
+		4D4E36651A69F46400164439 /* TimeRangeSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeRangeSchedule.h; sourceTree = "<group>"; };
+		4D4E36661A69F46400164439 /* TimeRangeSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeRangeSchedule.m; sourceTree = "<group>"; };
 		4DE509BF1A68C5DD00B89305 /* HotPie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotPie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE509C31A68C5DD00B89305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DE509C41A68C5DD00B89305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DE509C61A68C5DD00B89305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DE509C71A68C5DD00B89305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4DE509CA1A68C5DD00B89305 /* HotPie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HotPie.xcdatamodel; sourceTree = "<group>"; };
-		4DE509CC1A68C5DD00B89305 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4DE509CD1A68C5DD00B89305 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4DE509CC1A68C5DD00B89305 /* WeekSchedulerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeekSchedulerController.h; sourceTree = "<group>"; };
+		4DE509CD1A68C5DD00B89305 /* WeekSchedulerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekSchedulerController.m; sourceTree = "<group>"; };
 		4DE509D01A68C5DD00B89305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DE509D21A68C5DD00B89305 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4DE509D51A68C5DD00B89305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4DE509DB1A68C5DD00B89305 /* HotPieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotPieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE509E01A68C5DD00B89305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DE509E11A68C5DD00B89305 /* HotPieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotPieTests.m; sourceTree = "<group>"; };
+		B1B143F3F6E32DBA0F726D43 /* Pods-HotPie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotPie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotPie/Pods-HotPie.debug.xcconfig"; sourceTree = "<group>"; };
+		F6FF5FDF2445EC87F6FD2AC3 /* libPods-HotPie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HotPie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C974B63E643AB47695316C0 /* libPods-HotPie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +112,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF826AA050D16C7E901BB16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1B143F3F6E32DBA0F726D43 /* Pods-HotPie.debug.xcconfig */,
+				3193BAFB87761606075660DF /* Pods-HotPie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D4E36351A69870B00164439 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4D4E363B1A698AE100164439 /* TableView */,
+				4D4E363A1A698AD500164439 /* CollectionView */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4D4E36361A69871000164439 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DE509CC1A68C5DD00B89305 /* WeekSchedulerController.h */,
+				4DE509CD1A68C5DD00B89305 /* WeekSchedulerController.m */,
+				4D4E35FD1A697FB700164439 /* HomeController.h */,
+				4D4E35FE1A697FB700164439 /* HomeController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4D4E363A1A698AD500164439 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4D4E36411A698BFD00164439 /* SchedulerCell.h */,
+				4D4E36421A698BFD00164439 /* SchedulerCell.m */,
+				4D4E36431A698BFD00164439 /* SchedulerCell.xib */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		4D4E363B1A698AE100164439 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				4D4E363C1A698B1700164439 /* ScheduleTimeCell.h */,
+				4D4E363D1A698B1700164439 /* ScheduleTimeCell.m */,
+				4D4E363E1A698B1700164439 /* ScheduleTimeCell.xib */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		4D4E36461A69966800164439 /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				4D4E364C1A69979400164439 /* PopupController.h */,
+				4D4E364D1A69979400164439 /* PopupController.m */,
+				4D4E36471A6996A100164439 /* TempatureSettingsController.h */,
+				4D4E36481A6996A100164439 /* TempatureSettingsController.m */,
+				4D4E36501A699D2800164439 /* TouchWindow.h */,
+				4D4E36511A699D2800164439 /* TouchWindow.m */,
+			);
+			name = Popups;
+			sourceTree = "<group>";
+		};
+		4D4E36561A69C17100164439 /* CustomGestures */ = {
+			isa = PBXGroup;
+			children = (
+				4D4E36531A69C16D00164439 /* LabelSwipeControl.h */,
+				4D4E36541A69C16D00164439 /* LabelSwipeControl.m */,
+			);
+			name = CustomGestures;
+			sourceTree = "<group>";
+		};
+		4D4E36571A69CB7A00164439 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4D4E36581A69CB9000164439 /* Temperature.h */,
+				4D4E36591A69CB9000164439 /* Temperature.m */,
+				4D4E365F1A69E30900164439 /* DaySchedule.h */,
+				4D4E36601A69E30900164439 /* DaySchedule.m */,
+				4D4E36651A69F46400164439 /* TimeRangeSchedule.h */,
+				4D4E36661A69F46400164439 /* TimeRangeSchedule.m */,
+				4D4E36621A69F18400164439 /* WeekSchedule.h */,
+				4D4E36631A69F18400164439 /* WeekSchedule.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		4D4E365B1A69CC5D00164439 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4D4E365C1A69CC8B00164439 /* APIClient.h */,
+				4D4E365D1A69CC8B00164439 /* APIClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		4DE509B61A68C5DD00B89305 = {
 			isa = PBXGroup;
 			children = (
 				4DE509C11A68C5DD00B89305 /* HotPie */,
 				4DE509DE1A68C5DD00B89305 /* HotPieTests */,
 				4DE509C01A68C5DD00B89305 /* Products */,
+				0BF826AA050D16C7E901BB16 /* Pods */,
+				DD7E076A71796B5E361B0893 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +230,18 @@
 		4DE509C11A68C5DD00B89305 /* HotPie */ = {
 			isa = PBXGroup;
 			children = (
+				4D4E365B1A69CC5D00164439 /* Networking */,
+				4D4E36571A69CB7A00164439 /* Objects */,
+				4D4E36561A69C17100164439 /* CustomGestures */,
+				4D4E36461A69966800164439 /* Popups */,
+				4D4E36361A69871000164439 /* ViewControllers */,
+				4D4E36351A69870B00164439 /* Cells */,
 				4DE509C61A68C5DD00B89305 /* AppDelegate.h */,
 				4DE509C71A68C5DD00B89305 /* AppDelegate.m */,
-				4DE509CC1A68C5DD00B89305 /* ViewController.h */,
-				4DE509CD1A68C5DD00B89305 /* ViewController.m */,
+				4D4E36001A6980AC00164439 /* UIViewController+Additions.h */,
+				4D4E36011A6980AC00164439 /* UIViewController+Additions.m */,
 				4DE509CF1A68C5DD00B89305 /* Main.storyboard */,
+				4D4E364A1A69974D00164439 /* Popup.storyboard */,
 				4DE509D21A68C5DD00B89305 /* Images.xcassets */,
 				4DE509D41A68C5DD00B89305 /* LaunchScreen.xib */,
 				4DE509C91A68C5DD00B89305 /* HotPie.xcdatamodeld */,
@@ -122,6 +276,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DD7E076A71796B5E361B0893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6FF5FDF2445EC87F6FD2AC3 /* libPods-HotPie.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DE509E51A68C5DD00B89305 /* Build configuration list for PBXNativeTarget "HotPie" */;
 			buildPhases = (
+				144E89BE20AA03D8BC3A8C1B /* Check Pods Manifest.lock */,
 				4DE509BB1A68C5DD00B89305 /* Sources */,
 				4DE509BC1A68C5DD00B89305 /* Frameworks */,
 				4DE509BD1A68C5DD00B89305 /* Resources */,
+				F4741BEF3B081793F6023491 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +367,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE509D11A68C5DD00B89305 /* Main.storyboard in Resources */,
+				4D4E36451A698BFD00164439 /* SchedulerCell.xib in Resources */,
+				4D4E36401A698B1700164439 /* ScheduleTimeCell.xib in Resources */,
+				4D4E364B1A69974D00164439 /* Popup.storyboard in Resources */,
 				4DE509D61A68C5DD00B89305 /* LaunchScreen.xib in Resources */,
 				4DE509D31A68C5DD00B89305 /* Images.xcassets in Resources */,
 			);
@@ -217,14 +384,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		144E89BE20AA03D8BC3A8C1B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4741BEF3B081793F6023491 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HotPie/Pods-HotPie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DE509BB1A68C5DD00B89305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4E36611A69E30900164439 /* DaySchedule.m in Sources */,
+				4D4E36671A69F46400164439 /* TimeRangeSchedule.m in Sources */,
+				4D4E365A1A69CB9000164439 /* Temperature.m in Sources */,
+				4D4E36641A69F18400164439 /* WeekSchedule.m in Sources */,
+				4D4E365E1A69CC8B00164439 /* APIClient.m in Sources */,
+				4D4E36441A698BFD00164439 /* SchedulerCell.m in Sources */,
+				4D4E36491A6996A100164439 /* TempatureSettingsController.m in Sources */,
+				4D4E36021A6980AC00164439 /* UIViewController+Additions.m in Sources */,
+				4D4E36551A69C16D00164439 /* LabelSwipeControl.m in Sources */,
+				4D4E363F1A698B1700164439 /* ScheduleTimeCell.m in Sources */,
+				4D4E36521A699D2800164439 /* TouchWindow.m in Sources */,
+				4D4E35FF1A697FB700164439 /* HomeController.m in Sources */,
 				4DE509C81A68C5DD00B89305 /* AppDelegate.m in Sources */,
 				4DE509C51A68C5DD00B89305 /* main.m in Sources */,
-				4DE509CE1A68C5DD00B89305 /* ViewController.m in Sources */,
+				4DE509CE1A68C5DD00B89305 /* WeekSchedulerController.m in Sources */,
+				4D4E364E1A69979400164439 /* PopupController.m in Sources */,
 				4DE509CB1A68C5DD00B89305 /* HotPie.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,9 +560,12 @@
 		};
 		4DE509E61A68C5DD00B89305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B143F3F6E32DBA0F726D43 /* Pods-HotPie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HotPie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,9 +573,12 @@
 		};
 		4DE509E71A68C5DD00B89305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3193BAFB87761606075660DF /* Pods-HotPie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HotPie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +637,7 @@
 				4DE509E71A68C5DD00B89305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DE509E81A68C5DD00B89305 /* Build configuration list for PBXNativeTarget "HotPieTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +646,7 @@
 				4DE509EA1A68C5DD00B89305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SchedulerCell" id="gTV-IL-0wX" customClass="SchedulerCell">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="271"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="271"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7HD-dA-lOe">
+                        <rect key="frame" x="0.0" y="40" width="279" height="231"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="aeK-0c-1Vx"/>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="DkU-ly-hPF"/>
+                        </connections>
+                    </tableView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day Name Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gS-3X-e2R">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="EMz-0Q-nfd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7HD-dA-lOe" secondAttribute="trailing" id="3eJ-bU-wJh"/>
+                <constraint firstAttribute="bottom" secondItem="7HD-dA-lOe" secondAttribute="bottom" id="62f-EF-8zE"/>
+                <constraint firstItem="8gS-3X-e2R" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BYZ-5b-Fwp"/>
+                <constraint firstItem="7HD-dA-lOe" firstAttribute="top" secondItem="8gS-3X-e2R" secondAttribute="bottom" id="MfG-Jx-wCJ"/>
+                <constraint firstItem="7HD-dA-lOe" firstAttribute="top" secondItem="8gS-3X-e2R" secondAttribute="bottom" id="QNA-U2-6n1"/>
+                <constraint firstAttribute="trailing" secondItem="8gS-3X-e2R" secondAttribute="trailing" id="YUM-od-ZIq"/>
+                <constraint firstItem="7HD-dA-lOe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bTc-KT-ZVT"/>
+                <constraint firstItem="8gS-3X-e2R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="x2h-zB-vaJ"/>
+            </constraints>
+            <size key="customSize" width="279" height="271"/>
+            <connections>
+                <outlet property="dayLabel" destination="8gS-3X-e2R" id="tu7-Oi-sq4"/>
+                <outlet property="tableView" destination="7HD-dA-lOe" id="TMa-W8-bJl"/>
+            </connections>
+            <point key="canvasLocation" x="253.5" y="264.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

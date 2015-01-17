@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeekSchedule.h"
 
-@interface ViewController : UIViewController
+@interface WeekSchedulerController : UIViewController
 
+@property (nonatomic, strong) WeekSchedule *weekSchedule;
 
 @end
 
